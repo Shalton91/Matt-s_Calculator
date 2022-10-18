@@ -1,0 +1,53 @@
+[
+
+  {
+    "Title": "Sliding lid",
+    "BackHeight": 174,
+    "BackWidth": 124,
+    "SideHeight": 174,
+    "SideWidth": 99
+  },
+  {
+    "Title": "Puzzle",
+    "BackHeight": 162,
+    "BackWidth": 119,
+    "SideHeight": 162,
+    "SideWidth": 93
+  },
+  {
+    "Title": "Landscape",
+    "BackHeight": 162,
+    "BackWidth": 119,
+    "SideHeight": null,
+    "SideWidth": null
+  },
+  {
+    "Title": "Custom",
+    "BackHeight": 162,
+    "BackWidth": 119,
+    "SideHeight": null,
+    "SideWidth": null
+  },
+  {
+    "Title": "4x6",
+    "BackHeight": 162,
+    "BackWidth": 119,
+    "SideHeight": null,
+    "SideWidth": null
+  },
+  {
+    "Title": "5x7",
+    "BackHeight": 162,
+    "BackWidth": 119,
+    "SideHeight": null ,
+    "SideWidth": null
+  },
+  {
+    "Title": "8x10",
+    "BackHeight": 162,
+    "BackWidth": 119,
+    "SideHeight":null ,
+    "SideWidth": null
+  }
+
+]
