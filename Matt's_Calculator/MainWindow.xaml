@@ -5,17 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Matt_s_Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="800">
+        Title="Gimp Conversion Calculator" Height="300" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TabControl x:Name="tcMain"  Grid.Row="0">
-            <TabItem Header="Sliding Lid">
-
-            </TabItem>
-            
+        <TabControl x:Name="tcMain"  Grid.Row="0" >
         </TabControl>
         <Grid Grid.Row="1" Background="#FFE5E5E5">
             <Grid.ColumnDefinitions>
@@ -25,11 +21,11 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition/>
-                <RowDefinition/>
+            <Grid.RowDefinitions >
+                <RowDefinition x:Name="grMainTitle" Height="auto"/>
+                <RowDefinition x:Name="grBackTitle" Height="auto"/>
+                <RowDefinition x:Name="grBackHeight"/>
+                <RowDefinition x:Name="grBackWidth"/>
                 <RowDefinition x:Name="grSideTitle" Height="auto"/>
                 <RowDefinition x:Name="grSideHeight"/>
                 <RowDefinition x:Name="grSideWidth"/>
@@ -69,17 +65,24 @@
             <Label Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">Side</Label>
 
 
-            <TextBox x:Name="tbSlidingLidBackHeight" Margin="5" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" ></TextBox>
-            <TextBox x:Name="tbSlidingLidBackWidth" Margin="5" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center"></TextBox>
-            <TextBox x:Name="tbSlidingLidSideHeight" Margin="5" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center"></TextBox>
-            <TextBox x:Name="tbSlidingLidSideWidth" Margin="5" Grid.Row="6" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+            <TextBox x:Name="tbBackHeight" Margin="5" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput" />
+            <TextBox x:Name="tbBackWidth" Margin="5" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput"></TextBox>
+            <TextBox x:Name="tbSideHeight" Margin="5" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput"></TextBox>
+            <TextBox x:Name="tbSideWidth" Margin="5" Grid.Row="6" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput"></TextBox>
 
-            <TextBlock x:Name="txtblkSlidingLidBackGimpHeight" ></TextBlock>
-            <TextBlock x:Name="txtblkSlidingLidBackGimpWidth" ></TextBlock>
-            <TextBlock x:Name="txtblkSlidingLidBackGimpHeightRatio" ></TextBlock>
-            <TextBlock x:Name="txtblkSlidingLidBackGimpWidthRatio" ></TextBlock>
-            <TextBlock x:Name="txtblkSlidingBackLidImageHeight" Grid.Row="2" Grid.Column="4" ></TextBlock>
-            <TextBlock x:Name="txtblkSlidingBackLidImageWidth" Grid.Row="3" Grid.Column="3" ></TextBlock>
+            <TextBlock x:Name="txtblkBackGimpHeight" Grid.Row="2" Grid.Column="1"></TextBlock>
+            <TextBlock x:Name="txtblkBackGimpWidth" Grid.Row="3" Grid.Column="1"></TextBlock>
+            <TextBlock x:Name="txtblkBackGimpHeightRatio" Grid.Row="2" Grid.Column="2"></TextBlock>
+            <TextBlock x:Name="txtblkBackGimpWidthRatio"  Grid.Row="3" Grid.Column="2" ></TextBlock>
+            <TextBlock x:Name="txtblkBackImageHeight" Grid.Row="2" Grid.Column="4" ></TextBlock>
+            <TextBlock x:Name="txtblkBackImageWidth" Grid.Row="3" Grid.Column="3" ></TextBlock>
+            
+            <TextBlock x:Name="txtblkSideGimpHeight" Grid.Row="5" Grid.Column="1"></TextBlock>
+            <TextBlock x:Name="txtblkSideGimpWidth" Grid.Row="6" Grid.Column="1"></TextBlock>
+            <TextBlock x:Name="txtblkSideGimpHeightRatio" Grid.Row="5" Grid.Column="2"></TextBlock>
+            <TextBlock x:Name="txtblkSideGimpWidthRatio"  Grid.Row="6" Grid.Column="2" ></TextBlock>
+            <TextBlock x:Name="txtblkSideImageHeight" Grid.Row="5" Grid.Column="4" ></TextBlock>
+            <TextBlock x:Name="txtblkSideImageWidth" Grid.Row="6" Grid.Column="3" ></TextBlock>
 
         </Grid>
 
