@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\obj\Debug\net6.0-windows\
+C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\obj\Release\net6.0-windows\
 Matt_s_Calculator
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\App.xaml
 11407045341
 
-6-262094737
+6471038166
 194-164764702
 MainWindow.xaml;
 
-True
+False
 
