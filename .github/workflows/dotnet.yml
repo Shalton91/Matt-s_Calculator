@@ -24,4 +24,21 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish -c Release --self-contained -r win-x64 -p:PublishSingleFile=ture
+      run: dotnet publish -c Release --self-contained -r win-x64 -p:PublishSingleFile=ture --no-build
+    - uses: actions/create-release@v1
+      id: create_release
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+
+    - uses: csexton/release-asset-action@v2
+      with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pattern: Matt-s_Calculator/Matt's_Calculator/bin/Release/net6.0-windows/publish/*
+          release-url: ${{ steps.create_release.outputs.upload_url }}
+
+
+
+      
