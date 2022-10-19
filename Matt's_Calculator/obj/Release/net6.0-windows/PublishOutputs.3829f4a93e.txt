@@ -1,0 +1,6 @@
+C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\bin\Release\net6.0-windows\publish\TabSettings.json
+C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\bin\Release\net6.0-windows\publish\Matt's_Calculator.exe
+C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\bin\Release\net6.0-windows\publish\Matt's_Calculator.dll
+C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\bin\Release\net6.0-windows\publish\Matt's_Calculator.deps.json
+C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\bin\Release\net6.0-windows\publish\Matt's_Calculator.runtimeconfig.json
+C:\Users\shalt\source\repos\Matt's_Calculator\Matt's_Calculator\bin\Release\net6.0-windows\publish\Matt's_Calculator.pdb
