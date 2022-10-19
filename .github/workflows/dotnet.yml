@@ -24,4 +24,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish -c Release --self-contained -p:PublishSingleFile=ture
+      run: dotnet publish -c Release --self-contained -r win-x64 -p:PublishSingleFile=ture
