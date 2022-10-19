@@ -16,36 +16,36 @@
   },
   {
     "Title": "Landscape",
-    "BackHeight": 162,
-    "BackWidth": 119,
+    "BackHeight": 174,
+    "BackWidth": 326,
     "SideHeight": null,
     "SideWidth": null
   },
   {
     "Title": "Custom",
-    "BackHeight": 162,
-    "BackWidth": 119,
+    "BackHeight": 168,
+    "BackWidth": 322,
     "SideHeight": null,
     "SideWidth": null
   },
   {
     "Title": "4x6",
-    "BackHeight": 162,
-    "BackWidth": 119,
+    "BackHeight": 152.4,
+    "BackWidth": 101.6,
     "SideHeight": null,
     "SideWidth": null
   },
   {
     "Title": "5x7",
-    "BackHeight": 162,
-    "BackWidth": 119,
+    "BackHeight": 177.8,
+    "BackWidth": 127,
     "SideHeight": null ,
     "SideWidth": null
   },
   {
     "Title": "8x10",
-    "BackHeight": 162,
-    "BackWidth": 119,
+    "BackHeight": 254,
+    "BackWidth": 203.2,
     "SideHeight":null ,
     "SideWidth": null
   }

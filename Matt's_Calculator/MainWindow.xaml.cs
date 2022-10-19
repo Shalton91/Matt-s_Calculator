@@ -50,6 +50,7 @@ namespace Matt_s_Calculator
         }
         private void LoadTab (TabSettings ts)
         {
+            ClearInputs();
             ActiveTabSetting = ts;
             System.Windows.GridLength gr;
             grMainTitle.Height = GridLength.Auto;
@@ -77,15 +78,15 @@ namespace Matt_s_Calculator
         {
             txtblkBackGimpHeight.Text = ts.BackHeight.ToString();
             txtblkBackGimpWidth.Text = ts.BackWidth.ToString();
-            txtblkBackGimpHeightRatio.Text = (ts.BackHeight / ts.BackWidth).ToString();
-            txtblkBackGimpWidthRatio.Text = (ts.BackWidth/ ts.BackHeight ).ToString();
+            txtblkBackGimpHeightRatio.Text = Math.Round (ts.BackHeight / ts.BackWidth,6).ToString();
+            txtblkBackGimpWidthRatio.Text = Math.Round(ts.BackWidth/ ts.BackHeight,6 ).ToString();
         }
         private void LoadGimpSide(TabSettings ts)
         {
             txtblkSideGimpHeight.Text = ts.SideHeight.ToString();
             txtblkSideGimpWidth.Text = ts.SideWidth.ToString();
-            txtblkSideGimpHeightRatio.Text = (ts.SideHeight / ts.SideWidth).ToString();
-            txtblkSideGimpWidthRatio.Text = (ts.SideWidth / ts.SideHeight).ToString();
+            txtblkSideGimpHeightRatio.Text = Math.Round(ts.SideHeight.Value / ts.SideWidth.Value,6).ToString();
+            txtblkSideGimpWidthRatio.Text = Math.Round(ts.SideWidth.Value / ts.SideHeight.Value,6).ToString();
         }
 
         private void tcMain_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -125,6 +126,71 @@ namespace Matt_s_Calculator
             return !_regex.IsMatch(text);
         }
 
-    
+        private void tbSideWidth_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            double dblOut = 0.0;
+            var box = (TextBox)sender;
+            if(box.Text == null|| box.Text == "")
+            {
+                txtblkSideImageHeight.Text = "";
+                return;
+            }
+            double dblIn = double.Parse(box.Text);
+            dblOut = Math.Round((dblIn / ActiveTabSetting.SideWidth.Value)*ActiveTabSetting.SideHeight.Value,2);
+            txtblkSideImageHeight.Text = dblOut.ToString();
+        }
+
+        private void tbSideHeight_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            double dblOut = 0.0;
+            var box = (TextBox)sender;
+            if (box.Text == null || box.Text == "")
+            {
+                txtblkSideImageHeight.Text = "";
+                return;
+            }
+            double dblIn = double.Parse(box.Text);
+            dblOut = Math.Round((dblIn / ActiveTabSetting.SideHeight.Value) * ActiveTabSetting.SideWidth.Value, 2);
+            txtblkSideImageWidth.Text = dblOut.ToString();
+        }
+
+        private void tbBackWidth_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            double dblOut = 0.0;
+            var box = (TextBox)sender;
+            if (box.Text == null || box.Text == "")
+            {
+                txtblkSideImageHeight.Text = "";
+                return;
+            }
+            double dblIn = double.Parse(box.Text);
+            dblOut = Math.Round((dblIn / ActiveTabSetting.BackWidth) * ActiveTabSetting.BackHeight, 2);
+            txtblkBackImageHeight.Text = dblOut.ToString();
+        }
+
+        private void tbBackHeight_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            double dblOut = 0.0;
+            var box = (TextBox)sender;
+            if (box.Text == null || box.Text == "")
+            {
+                txtblkSideImageHeight.Text = "";
+                return;
+            }
+            double dblIn = double.Parse(box.Text);
+            dblOut = Math.Round((dblIn / ActiveTabSetting.BackHeight) * ActiveTabSetting.BackWidth, 2);
+            txtblkBackImageWidth.Text = dblOut.ToString();
+        }
+        private void ClearInputs()
+        {
+            tbBackHeight.Text = "";
+            tbBackWidth.Text = "";
+            tbSideHeight.Text = "";
+            tbSideWidth.Text = "";
+            txtblkBackImageHeight.Text = "";
+            txtblkBackImageWidth.Text = "";
+            txtblkSideImageHeight.Text = "";
+            txtblkSideImageWidth.Text = "";
+        }
     }
 }

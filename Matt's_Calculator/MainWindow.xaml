@@ -65,24 +65,24 @@
             <Label Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">Side</Label>
 
 
-            <TextBox x:Name="tbBackHeight" Margin="5" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput" />
-            <TextBox x:Name="tbBackWidth" Margin="5" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput"></TextBox>
-            <TextBox x:Name="tbSideHeight" Margin="5" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput"></TextBox>
-            <TextBox x:Name="tbSideWidth" Margin="5" Grid.Row="6" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput"></TextBox>
+            <TextBox x:Name="tbBackHeight" Margin="5" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput" TextChanged="tbBackHeight_TextChanged" />
+            <TextBox x:Name="tbBackWidth" Margin="5" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput" TextChanged="tbBackWidth_TextChanged"></TextBox>
+            <TextBox x:Name="tbSideHeight" Margin="5" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput" TextChanged="tbSideHeight_TextChanged"></TextBox>
+            <TextBox x:Name="tbSideWidth" Margin="5" Grid.Row="6" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tb_PreviewTextInput" TextChanged="tbSideWidth_TextChanged"></TextBox>
 
-            <TextBlock x:Name="txtblkBackGimpHeight" Grid.Row="2" Grid.Column="1"></TextBlock>
-            <TextBlock x:Name="txtblkBackGimpWidth" Grid.Row="3" Grid.Column="1"></TextBlock>
-            <TextBlock x:Name="txtblkBackGimpHeightRatio" Grid.Row="2" Grid.Column="2"></TextBlock>
-            <TextBlock x:Name="txtblkBackGimpWidthRatio"  Grid.Row="3" Grid.Column="2" ></TextBlock>
-            <TextBlock x:Name="txtblkBackImageHeight" Grid.Row="2" Grid.Column="4" ></TextBlock>
-            <TextBlock x:Name="txtblkBackImageWidth" Grid.Row="3" Grid.Column="3" ></TextBlock>
-            
-            <TextBlock x:Name="txtblkSideGimpHeight" Grid.Row="5" Grid.Column="1"></TextBlock>
-            <TextBlock x:Name="txtblkSideGimpWidth" Grid.Row="6" Grid.Column="1"></TextBlock>
-            <TextBlock x:Name="txtblkSideGimpHeightRatio" Grid.Row="5" Grid.Column="2"></TextBlock>
-            <TextBlock x:Name="txtblkSideGimpWidthRatio"  Grid.Row="6" Grid.Column="2" ></TextBlock>
-            <TextBlock x:Name="txtblkSideImageHeight" Grid.Row="5" Grid.Column="4" ></TextBlock>
-            <TextBlock x:Name="txtblkSideImageWidth" Grid.Row="6" Grid.Column="3" ></TextBlock>
+            <TextBlock x:Name="txtblkBackGimpHeight" Grid.Row="2" Grid.Column="1" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkBackGimpWidth" Grid.Row="3" Grid.Column="1" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkBackGimpHeightRatio" Grid.Row="2" Grid.Column="2" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkBackGimpWidthRatio"  Grid.Row="3" Grid.Column="2"  TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkBackImageHeight" Grid.Row="2" Grid.Column="4"  TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkBackImageWidth" Grid.Row="3" Grid.Column="3"  TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+            <TextBlock x:Name="txtblkSideGimpHeight" Grid.Row="5" Grid.Column="1" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkSideGimpWidth" Grid.Row="6" Grid.Column="1" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkSideGimpHeightRatio" Grid.Row="5" Grid.Column="2" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkSideGimpWidthRatio"  Grid.Row="6" Grid.Column="2" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkSideImageHeight" Grid.Row="5" Grid.Column="4" TextAlignment="Center"  HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtblkSideImageWidth" Grid.Row="6" Grid.Column="3" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
 
         </Grid>
 
